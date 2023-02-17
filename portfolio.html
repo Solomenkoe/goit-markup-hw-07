@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    
+    <title>Portfolio | WEBSTUDIO</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="./index.html" class="link logo logo-header"><span class="logo-part">Web</span>Studio</a>
+                <ul class="nav-list list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="link nav-link">Studio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./portfolio.html" class="link nav-link current">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./contact.html" class="link nav-link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <address class="header-contats">
+                <ul class="header-contacts-list list">
+                    <li class="header-contacts-item">
+                        <a href="mailto:info@devstudio.com" class="header-contacts-link link">info@devstudio.com</a>
+                    </li>
+                    <li class="header-contacts-item">
+                        <a href="tel:+110001111111" class="header-contacts-link link">+11 (000) 111-11-11</a>
+                    </li>
+                </ul>
+            </address>
+            <button type="button" class="mobile-nav-btn-open" data-menu-open>
+                <svg class="mobile-nav-btn-open-icon" width="30" height="18">
+                    <use href="./images/icons.svg#icon-nav-hamburger-converted"></use>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-nav-wrapper is-hidden" data-menu>
+            <div class="mobile-nav-container">
+                <div class="mobile-nav-top-part">
+                    <button type="button" class="mobile-nav-btn-close" data-menu-close>
+                        <svg class="mobile-nav-btn-close-icon" width="8" height="8">
+                            <use href="./images/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav-list list">
+                            <li class="mobile-nav-item">
+                                <a href="./index.html" class="link mobile-nav-link">Studio</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="./portfolio.html" class="link mobile-nav-link current">Portfolio</a>
+                            </li>
+                            <li class="mobile-nav-item">
+                                <a href="./contact.html" class="link mobile-nav-link">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mobile-nav-bottom-part">
+                    <address class="mobile-nav-contacts">
+                        <ul class="mobile-nav-contacts-list list">
+                            <li class="mobile-nav-contacts-item">
+                                <a href="tel:+110001111111" class="mobile-nav-contacts-phone link">+11 (000) 111-11-11</a>
+                            </li>
+                            <li class="mobile-nav-contacts-item">
+                                <a href="mailto:info@devstudio.com" class="mobile-nav-contacts-mail link">info@devstudio.com</a>
+                            </li>
+                        </ul>
+                    </address>
+                    <ul class="mobile-nav-soc-list">
+                        <li class="mobile-nav-soc-item">
+                            <a href="#" class="mobile-nav-soc-link link">
+                                <svg class="mobile-nav-soc-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-nav-soc-item">
+                            <a href="#" class="mobile-nav-soc-link link">
+                                <svg class="mobile-nav-soc-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-nav-soc-item">
+                            <a href="#" class="mobile-nav-soc-link link">
+                                <svg class="mobile-nav-soc-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mobile-nav-soc-item">
+                            <a href="#" class="mobile-nav-soc-link link">
+                                <svg class="mobile-nav-soc-icon" width="16" height="16">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <div class="container">
+                <h1 class="visually-hidden">Portfolio</h1>
+
+                <!-- Filters -->
+                <ul class="filters-list list">
+                    <li class="filters-item">
+                        <button type="button" class="filters-btn">All</button>
+                    </li>
+                    <li class="filters-item">
+                        <button type="button" class="filters-btn">Web Site</button>
+                    </li>
+                    <li class="filters-item">
+                        <button type="button" class="filters-btn">App</button>
+                    </li>
+                    <li class="filters-item">
+                        <button type="button" class="filters-btn">Design</button>
+                    </li>
+                    <li class="filters-item">
+                        <button type="button" class="filters-btn">Marketing</button>
+                    </li>
+                </ul>
+    
+                <!-- Projects -->
+                <ul class="projects-list list">
+                    <li class="projects-item">
+                        <a href="#" class="projects-link link">
+                            <div class="projects-item-image-wrapper">
+                                <img src="./images/bank-app.jpg" alt="Bank applications" width="360" height="300">
+                                <p class="projects-item-overtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas rerum delectus aliquam recusandae fugiat! Omnis mollitia minus harum cupiditate dolorem voluptates? Deserunt placeat non fugit quo praesentium veniam dicta mollitia.</p>
+                            </div>
+                            <div class="project-item-content-wrapper">
+                                <h2 class="project-title item-title">Banking App Interface Concept</h2>
+                                <p class="projects-text item-text">App</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="#" class="projects-link link">
+                            <div class="projects-item-image-wrapper">
+                                <img src="./images/payment.jpg" alt="Payment" width="360" height="300">
+                                <p class="projects-item-overtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente saepe nesciunt similique minus. Quod odit quidem, quam debitis id repudiandae, cumque minima blanditiis laborum aliquid, non veniam voluptatem tenetur.</p>
+                                
+                            </div>
+                            <div class="project-item-content-wrapper">
+                                <h2 class="project-title item-title">Cashless Payment</h2>
+                                <p class="projects-text item-text">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="#" class="projects-link link">
+                            <div class="projects-item-image-wrapper">
+                                <img src="./images/notebook-phone.jpg" alt="Notebook and Phone" width="360" height="300">
+                                <p class="projects-item-overtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente saepe nesciunt similique minus. Quod odit quidem, quam debitis id repudiandae, cumque minima blanditiis laborum aliquid, non veniam voluptatem tenetur.</p>
+                            </div>
+                            <div class="project-item-content-wrapper">
+                                <h2 class="project-title item-title">Meditaion App</h2>
+                                <p class="projects-text item-text">App</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="#" class="projects-link link">
+                            <div class="projects-item-image-wrapper">
+                                <img src="./images/taxi.jpg" alt="Taxi" width="360" height="300">
+                                <p class="projects-item-overtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente saepe nesciunt similique minus. Quod odit quidem, quam debitis id repudiandae, cumque minima blanditiis laborum aliquid, non veniam voluptatem tenetur.</p>
+                            </div>
+                            <div class="project-item-content-wrapper">
+                                <h2 class="project-title item-title">Taxi Service</h2>
+                                <p class="projects-text item-text">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="#" class="projects-link link">
+                            <div class="projects-item-image-wrapper">
+                                <img src="./images/phone.jpg" alt="Phone" width="360" height="300">
+                                <p class="projects-item-overtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente saepe nesciunt similique minus. Quod odit quidem, quam debitis id repudiandae, cumque minima blanditiis laborum aliquid, non veniam voluptatem tenetur.</p>
+                            </div>
+                            <div class="project-item-content-wrapper">
+                                <h2 class="project-title item-title">Screen Illustrations</h2>
+                                <p class="projects-text item-text">Design</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="#" class="projects-link link">
+                            <div class="projects-item-image-wrapper">
+                                <img src="./images/online-courses.jpg" alt="Online Courses" width="360" height="300">
+                                <p class="projects-item-overtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente saepe nesciunt similique minus. Quod odit quidem, quam debitis id repudiandae, cumque minima blanditiis laborum aliquid, non veniam voluptatem tenetur.</p>
+                            </div>
+                            <div class="project-item-content-wrapper">
+                                <h2 class="project-title item-title">Online Courses</h2>
+                                <p class="projects-text item-text">Marketing</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="#" class="projects-link link">
+                            <div class="projects-item-image-wrapper">
+                                <img src="./images/instagram.jpg" alt="Instagram stories" width="360" height="300">
+                                <p class="projects-item-overtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente saepe nesciunt similique minus. Quod odit quidem, quam debitis id repudiandae, cumque minima blanditiis laborum aliquid, non veniam voluptatem tenetur.</p>
+                            </div>
+                            <div class="project-item-content-wrapper">
+                                <h2 class="project-title item-title">Instagram Stories Concept</h2>
+                                <p class="projects-text item-text">Design</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="#" class="projects-link link">
+                            <div class="projects-item-image-wrapper">
+                                <img src="./images/food.jpg" alt="Food" width="360" height="300">
+                                <p class="projects-item-overtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente saepe nesciunt similique minus. Quod odit quidem, quam debitis id repudiandae, cumque minima blanditiis laborum aliquid, non veniam voluptatem tenetur.</p>
+                            </div>
+                            <div class="project-item-content-wrapper">
+                                <h2 class="project-title item-title">Organic Food</h2>
+                                <p class="projects-text item-text">Web Site</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="projects-item">
+                        <a href="#" class="projects-link link">
+                            <div class="projects-item-image-wrapper">
+                                <img src="./images/coffee.jpg" alt="Coffee" width="360" height="300">
+                                <p class="projects-item-overtext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil sapiente saepe nesciunt similique minus. Quod odit quidem, quam debitis id repudiandae, cumque minima blanditiis laborum aliquid, non veniam voluptatem tenetur.</p>
+                            </div>
+                            <div class="project-item-content-wrapper">
+                                <h2 class="project-title item-title">Fresh Coffee</h2>
+                                <p class="projects-text item-text">Web Site</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>                
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content-wrapper">
+                <a href="./index.html" class="footer-logo logo link"><span class="logo-part">Web</span>Studio</a>
+                <p class="footer-text">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
+            </div>
+            <div class="footer-soc-list-wrapper">
+                <h3 class="footer-soc-list-title">Social media</h3>
+                <ul class="footer-soc-list">
+                    <li class="footer-soc-item">
+                        <a href="#" class="footer-soc-link link">
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-soc-item">
+                        <a href="#" class="footer-soc-link link">
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-soc-item">
+                        <a href="#" class="footer-soc-link link">
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer-soc-item">
+                        <a href="#" class="footer-soc-link link">
+                            <svg class="footer-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-subscribe">
+                <h3 class="footer-subscribe-title">Subscribe</h3>
+                <form class="footer-subscribe-form" action="subscribe_form">
+                    <label for="subscribe-email">
+                        <input placeholder="E-mail" class="footer-email-input" type="email" name="email" id="subscribe-email">
+                    </label>
+                    <button type="submit" class="footer-subscribe-btn btn">
+                        Subscribe
+                        <svg class="footer-subscribe-btn-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-plane"></use>
+                        </svg>
+                    </button>
+                    
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+    
+</body>
+</html>
