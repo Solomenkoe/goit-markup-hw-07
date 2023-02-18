@@ -42,6 +42,11 @@
     .mobile-nav-contacts-mail {
         font-size: 20px;
     }
+
+    .mobile-nav-soc-list {
+        justify-content: start;
+        gap: 56px;
+    }
 }
 
 @media (min-width: 768px) {
